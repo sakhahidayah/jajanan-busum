@@ -4,7 +4,7 @@ import { createWhatsAppUrl } from "../data/contact.js";
 export default function ProductCard({ product }) {
   const [imageError, setImageError] = useState(false);
 
-  const message = `Halo Bu Sum, saya mau tanya tentang ${product.name}.`;
+  const message = `Halo Bu Sum, saya habis melihat website Aneka Snack Bu Sum dan tertarik dengan produk ${product.name}. Saya ingin bertanya lebih lanjut mengenai produk ini, seperti harga dan minimal pesanannya. Terima kasih, Bu Sum.`;
   const whatsappUrl = createWhatsAppUrl(message);
 
   return (
@@ -25,7 +25,7 @@ export default function ProductCard({ product }) {
       ) : (
         <img
           src={product.image}
-          alt={product.name}
+          alt={`${product.name} Bu Sum`}
           loading="lazy"
           onError={() => setImageError(true)}
           className="aspect-[4/3] w-full border-b border-sawo-matang/25 object-cover"
