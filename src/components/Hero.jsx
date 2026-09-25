@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { createWhatsAppUrl, defaultWhatsAppMessage } from "../data/contact.js";
 import { products } from "../data/products.js";
 
 const heroImageSource = products[0]?.image ?? null;
@@ -24,12 +23,10 @@ export default function Hero() {
             Jajanan rumahan, dibuat segar sesuai pesanan.
           </p>
           <a
-            href={createWhatsAppUrl(defaultWhatsAppMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#kontak"
             className="inline-flex min-h-11 items-center justify-center bg-gula-jawa px-6 py-3 font-semibold text-arang transition-colors hover:bg-sawo-matang hover:text-putih-tulang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang focus-visible:ring-offset-2 focus-visible:ring-offset-kertas-minyak"
           >
-            Chat via WhatsApp
+            Hubungi Bu Sum
           </a>
         </div>
 
