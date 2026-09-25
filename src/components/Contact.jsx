@@ -7,31 +7,48 @@ import {
 
 export default function Contact() {
   return (
-    <section id="kontak">
-      <div className="mx-auto w-full max-w-[1120px] px-4 py-10 md:px-6 md:py-14">
-        <h2 className="font-display text-3xl font-semibold text-arang md:text-4xl">
-          Mau pesan atau tanya-tanya?
-        </h2>
-        <p className="mt-4 max-w-[60ch] text-arang">
-          Silakan hubungi Bu Sum melalui WhatsApp.
-        </p>
+    <section id="kontak" className="relative overflow-hidden bg-putih-tulang">
+      <div
+        aria-hidden="true"
+        className="pattern-kawung fade-corner-br pointer-events-none absolute -bottom-4 -right-4 h-28 w-36 opacity-60 md:h-36 md:w-48"
+      />
+      <div className="relative z-10 mx-auto grid w-full max-w-[1120px] gap-8 px-4 py-10 md:grid-cols-2 md:gap-12 md:px-6 md:py-14">
+        <div className="flex flex-col gap-4">
+          <div aria-hidden="true" className="pattern-lurik h-1.5 w-16" />
+          <h2 className="font-display text-3xl font-semibold text-arang md:text-4xl">
+            Mau pesan atau tanya-tanya?
+          </h2>
+          <p className="max-w-[60ch] text-arang">
+            Kalau sedang menyiapkan arisan, syukuran, rapat, atau acara lainnya,
+            bisa langsung menghubungi Bu Sum melalui WhatsApp. Sampaikan jajanan
+            yang ingin dipesan dan kebutuhan acaranya, nanti bisa ditanyakan
+            lebih lanjut.
+          </p>
+        </div>
 
-        <address className="mt-5 flex items-start gap-2 not-italic text-arang">
-          <MapPin
-            aria-hidden="true"
-            className="mt-0.5 size-5 shrink-0 text-sawo-matang"
-          />
-          <span>{contact.address}</span>
-        </address>
+        <div className="flex flex-col gap-5">
+          <div>
+            <p className="text-sm font-semibold text-sawo-matang">Alamat</p>
+            <address className="mt-2 flex items-start gap-2 not-italic text-arang">
+              <MapPin
+                aria-hidden="true"
+                className="mt-0.5 size-5 shrink-0 text-sawo-matang"
+              />
+              <span>{contact.address}</span>
+            </address>
+          </div>
 
-        <a
-          href={createWhatsAppUrl(defaultWhatsAppMessage)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex min-h-11 items-center justify-center bg-gula-jawa px-6 py-3 font-semibold text-arang transition-colors hover:bg-sawo-matang hover:text-putih-tulang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang focus-visible:ring-offset-2 focus-visible:ring-offset-kertas-minyak"
-        >
-          Chat via WhatsApp
-        </a>
+          <div>
+            <a
+              href={createWhatsAppUrl(defaultWhatsAppMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center justify-center bg-gula-jawa px-6 py-3 font-semibold text-arang transition-colors hover:bg-sawo-matang hover:text-putih-tulang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang focus-visible:ring-offset-2 focus-visible:ring-offset-putih-tulang"
+            >
+              Chat via WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

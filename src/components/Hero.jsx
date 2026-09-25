@@ -10,8 +10,12 @@ export default function Hero() {
   const showImage = heroImageSource !== null && !imageError;
 
   return (
-    <section id="home">
-      <div className="mx-auto grid w-full max-w-[1120px] gap-8 px-4 py-10 md:grid-cols-2 md:items-center md:gap-12 md:px-6 md:py-16">
+    <section id="home" className="relative overflow-hidden">
+      <div
+        aria-hidden="true"
+        className="pattern-kawung fade-corner-bl pointer-events-none absolute -bottom-6 -left-6 h-28 w-44 opacity-60 md:h-36 md:w-56 md:opacity-70"
+      />
+      <div className="relative z-10 mx-auto grid w-full max-w-[1120px] gap-8 px-4 py-10 md:grid-cols-2 md:items-center md:gap-12 md:px-6 md:py-16">
         <div className="flex flex-col items-start gap-4">
           <h1 className="font-display text-4xl font-semibold text-arang md:text-5xl">
             Aneka Snack Bu Sum

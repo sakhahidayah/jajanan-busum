@@ -4,8 +4,8 @@ import { Menu, X } from "lucide-react";
 const DESKTOP_BREAKPOINT = 768;
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
+  { label: "Beranda", href: "#home" },
+  { label: "Tentang", href: "#about" },
   { label: "Produk", href: "#produk" },
   { label: "Kontak", href: "#kontak" },
 ];
@@ -35,9 +35,15 @@ export default function Navbar() {
       >
         <a
           href="#home"
-          className="font-display text-lg font-semibold text-arang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang md:text-xl"
+          className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang"
         >
-          Aneka Snack Bu Sum
+          <img
+            src="/images/logo/logo.png"
+            alt="Logo Aneka Snack Bu Sum"
+            width="1254"
+            height="1254"
+            className="h-10 w-auto rounded-full md:h-12"
+          />
         </a>
 
         <ul className="hidden items-center md:flex">

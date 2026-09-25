@@ -18,12 +18,19 @@ export default function About() {
         }`}
       >
         <div className="flex flex-col gap-4">
+          <div aria-hidden="true" className="pattern-lurik h-1.5 w-16" />
           <h2 className="font-display text-3xl font-semibold text-arang md:text-4xl">
-            Tentang Aneka Snack Bu Sum
+            Tentang Jajanan Bu Sum
           </h2>
           <p className="max-w-[60ch] text-arang">
-            Aneka Snack Bu Sum adalah usaha jajanan rumahan. Cerita dan informasi
-            tentang usaha ini akan ditampilkan di sini.
+            Jajanan Bu Sum adalah usaha jajanan rumahan yang menerima pesanan
+            untuk berbagai kebutuhan acara. Jajanan dibuat sesuai pesanan,
+            sehingga dapat disiapkan untuk kegiatan seperti arisan, syukuran,
+            rapat desa, maupun acara berkumpul lainnya.
+          </p>
+          <p className="max-w-[60ch] text-arang">
+            Lihat pilihan jajanan kami, lalu hubungi Bu Sum melalui WhatsApp
+            untuk menanyakan harga dan pemesanan.
           </p>
         </div>
 
