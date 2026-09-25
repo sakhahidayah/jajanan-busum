@@ -14,7 +14,7 @@ export default function Hero() {
         aria-hidden="true"
         className="pattern-kawung fade-corner-bl pointer-events-none absolute -bottom-6 -left-6 h-28 w-44 opacity-60 md:h-36 md:w-56 md:opacity-70"
       />
-      <div className="relative z-10 mx-auto grid w-full max-w-[1120px] gap-8 px-4 py-10 md:grid-cols-2 md:items-center md:gap-12 md:px-6 md:py-16">
+      <div className="relative z-10 mx-auto grid w-full max-w-280 gap-8 px-4 py-10 md:grid-cols-2 md:items-center md:gap-12 md:px-6 md:py-16">
         <div className="flex flex-col items-start gap-4">
           <h1 className="font-display text-4xl font-semibold text-arang md:text-5xl">
             Aneka Snack Bu Sum
@@ -37,13 +37,13 @@ export default function Hero() {
               alt="Kue lapis, jajanan pasar Indonesia"
               loading="eager"
               onError={() => setImageError(true)}
-              className="aspect-[4/3] w-full border border-sawo-matang/25 object-cover"
+              className="aspect-4/3 w-full border border-sawo-matang/25 object-cover"
             />
           ) : (
             <div
               role="img"
               aria-label="Foto produk Aneka Snack Bu Sum belum tersedia"
-              className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 border border-sawo-matang/25 bg-putih-tulang px-6 text-center"
+              className="flex aspect-4/3 w-full flex-col items-center justify-center gap-2 border border-sawo-matang/25 bg-putih-tulang px-6 text-center"
             >
               <p className="font-display text-xl font-semibold text-arang">
                 Aneka Snack Bu Sum

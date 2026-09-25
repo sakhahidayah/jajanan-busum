@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="pattern-kawung border-t border-sawo-matang/25 bg-kertas-minyak">
-      <div className="mx-auto w-full max-w-[1120px] px-4 py-8 md:px-6 md:py-10">
+      <div className="mx-auto w-full max-w-280 px-4 py-8 md:px-6 md:py-10">
         <div className="flex items-start gap-3">
           <img
             src="/images/logo/logo.png"

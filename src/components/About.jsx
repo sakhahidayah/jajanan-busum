@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className={`mx-auto grid w-full max-w-[1120px] gap-8 px-4 py-10 md:px-6 md:py-14 ${showImageArea ? "md:grid-cols-2 md:items-center md:gap-12" : ""}`}>
+      <div className={`mx-auto grid w-full max-w-280 gap-8 px-4 py-10 md:px-6 md:py-14 ${showImageArea ? "md:grid-cols-2 md:items-center md:gap-12" : ""}`}>
         <div className="flex flex-col gap-4">
           <div aria-hidden="true" className="pattern-lurik h-1.5 w-16" />
           <h2 className="font-display text-3xl font-semibold text-arang md:text-4xl">Tentang Jajanan Bu Sum</h2>
@@ -24,9 +24,9 @@ export default function About() {
         {showImageArea && (
           <div>
             {showImage ? (
-              <img src={imageSource} alt={`${aboutProduct.name}, jajanan pasar Indonesia`} loading="lazy" onError={() => setImageError(true)} className="aspect-[4/3] w-full border border-sawo-matang/25 object-cover" />
+              <img src={imageSource} alt={`${aboutProduct.name}, jajanan pasar Indonesia`} loading="lazy" onError={() => setImageError(true)} className="aspect-4/3 w-full border border-sawo-matang/25 object-cover" />
             ) : (
-              <div role="img" aria-label="Foto produk Aneka Snack Bu Sum belum tersedia" className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 border border-sawo-matang/25 bg-putih-tulang px-6 text-center">
+              <div role="img" aria-label="Foto produk Aneka Snack Bu Sum belum tersedia" className="flex aspect-4/3 w-full flex-col items-center justify-center gap-2 border border-sawo-matang/25 bg-putih-tulang px-6 text-center">
                 <p className="font-display text-xl font-semibold text-arang">Aneka Snack Bu Sum</p>
                 <p className="text-sm text-sawo-matang">Foto produk sedang disiapkan.</p>
               </div>

@@ -13,7 +13,7 @@ export default function ProductCard({ product }) {
         <div
           role="img"
           aria-label={`Foto ${product.name} belum tersedia`}
-          className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-1 border-b border-sawo-matang/25 bg-kertas-minyak px-4 text-center"
+          className="flex aspect-4/3 w-full flex-col items-center justify-center gap-1 border-b border-sawo-matang/25 bg-kertas-minyak px-4 text-center"
         >
           <p className="font-display text-lg font-semibold text-arang">
             {product.name}
@@ -28,7 +28,7 @@ export default function ProductCard({ product }) {
           alt={`${product.name} Bu Sum`}
           loading="lazy"
           onError={() => setImageError(true)}
-          className="aspect-[4/3] w-full border-b border-sawo-matang/25 object-cover"
+          className="aspect-4/3 w-full border-b border-sawo-matang/25 object-cover"
         />
       )}
 

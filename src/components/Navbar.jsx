@@ -31,7 +31,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-sawo-matang/25 bg-kertas-minyak">
       <nav
         aria-label="Navigasi utama"
-        className="mx-auto flex w-full max-w-[1120px] items-center justify-between px-4 py-2 md:px-6"
+        className="mx-auto flex w-full max-w-280 items-center justify-between px-4 py-2 md:px-6"
       >
         <a
           href="#home"
@@ -77,7 +77,7 @@ export default function Navbar() {
 
       {isMenuOpen && (
         <div id="menu-mobile" className="border-t border-sawo-matang/25 md:hidden">
-          <ul className="mx-auto w-full max-w-[1120px] px-4 py-2">
+          <ul className="mx-auto w-full max-w-280 px-4 py-2">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
