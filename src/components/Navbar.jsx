@@ -51,7 +51,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="block px-3 py-2.5 text-arang transition-colors hover:text-sawo-matang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang"
+                className="block px-3 py-2.5 font-medium text-arang transition-colors hover:text-sawo-matang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang"
               >
                 {link.label}
               </a>
@@ -83,7 +83,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block px-2 py-3 text-arang transition-colors hover:text-sawo-matang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang"
+                  className="block px-2 py-3 font-medium text-arang transition-colors hover:text-sawo-matang focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sawo-matang"
                 >
                   {link.label}
                 </a>

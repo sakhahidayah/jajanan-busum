@@ -294,7 +294,7 @@ Putih Tulang   #FBF6EE
 
 ### Fonts
 
-- Fraunces → heading/display.
+- Lora → heading/display.
 - Karla → body/UI.
 
 Jangan menambahkan font lain tanpa alasan dan tanpa mengubah design specification.

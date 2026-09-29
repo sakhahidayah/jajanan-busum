@@ -9,7 +9,7 @@
   --color-putih-tulang: #fbf6ee;
 
   --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-display: "Lora", Georgia, "Times New Roman", serif;
 }
 
 @layer base {

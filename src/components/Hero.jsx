@@ -16,7 +16,7 @@ export default function Hero() {
       />
       <div className="relative z-10 mx-auto grid w-full max-w-280 gap-8 px-4 py-10 md:grid-cols-2 md:items-center md:gap-12 md:px-6 md:py-16">
         <div className="flex flex-col items-start gap-4">
-          <h1 className="font-display text-4xl font-semibold text-arang md:text-5xl">
+          <h1 className="font-display text-4xl font-bold text-arang md:text-5xl">
             Aneka Snack Bu Sum
           </h1>
           <p className="text-lg text-arang">
